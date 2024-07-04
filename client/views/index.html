@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../resources/css/style.css">
+        <title>CLIENT</title>
+    </head>
+    <body>
+        <div>
+            <h1>CLIENT</h1>
+        </div>
+        <div>
+            <span>Server :</span>
+            <input type="text" id="server" value="http://localhost:3000">
+            <button
+                id="connectBtn"
+                onclick="connect()">
+            Connect</button><button
+                id="disconnectBtn"
+                onclick="disconnect()"
+                disabled>
+            Disconnect</button>
+        </div>
+        <div>
+            <span>Data from server :</span><br>
+            <textarea id="dataOutput" placeholder="Data from server" rows="10"></textarea>
+        </div>
+    </body>
+    <script src="../resources/js/socket.io.js"></script>
+    <script src="../resources/js/index.js"></script>
+</html>

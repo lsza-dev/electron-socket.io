@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SERVER</title>
+    </head>
+    <body>
+        <div>
+            <h1>SERVER</h1>
+        </div>
+        <div>
+            <button onclick="app.openClient()">Open Local Client Window</button>
+        </div>
+        <div>
+            <textarea id="message" rows="10" placeholder="Data to send"></textarea><br>
+            <button onclick="app.sendMessage(message.value)">Send to Clients</button>
+        </div>
+    </body>
+    <script src="../resources/js/index.js"></script>
+</html>
